@@ -1,0 +1,139 @@
+/* @font-face {
+	font-family: "Monserrat";
+	src: url("/assets/font/Montserrat.ttf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Monserrat";
+	src: url("/assets/font/Montserrat-SemiBold.ttf") format("opentype");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Monserrat";
+	src: url("/assets/font/Montserrat-Bold.ttf") format("opentype");
+	font-weight: 800;
+	font-style: normal;
+} */
+/* @font-face {
+	font-family: "Gotham";
+	src: url("/assets/fonts/gotham/Gotham-Light.otf") format("opentype");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Gotham";
+	src: url("/assets/fonts/gotham/gotham-medium.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Gotham";
+	src: url("/assets/fonts/gotham/Gotham-Medium.otf") format("opentype");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Gotham";
+	src: url("/assets/fonts/gotham/Gotham-Bold.otf") format("opentype");
+	font-weight: 800;
+	font-style: normal;
+} */
+
+:root {
+	/*Font Sizes*/
+	--h1: 3.4rem;
+	--h2: 2.8rem;
+	--h3: 2.6rem;
+	--h4: 2.4rem;
+	--h5: 2rem;
+	--h6: 1.8rem;
+	--p: 1.8rem;
+	--p2: 1.6rem;
+	--p3: 1.4rem;
+	--p4: 1.2rem;
+	--p5: 1rem;
+	--p6: 0.8rem;
+	--margin-tittle: 1.5rem;
+	--margin-text: 1rem;
+}
+html * {
+	/* font-family: "Gotham", sans-serif; */
+	font-family: var(--font-gotham-normal), sans-serif;
+}
+
+/* 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.p1,
+.p2,
+.p3,
+.p4 {
+	color: var(--main-text);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0.5rem 0 1rem 0;
+	border: 0;
+	font-weight: normal;
+	line-height: 3rem;
+}
+p,
+.p1,
+.p2,
+.p3,
+.p4 {
+	margin: 0.5rem 0 1rem 0;
+	margin-bottom: var(--margin-text);
+} */
+
+h1 {
+	font-size: var(--h1);
+}
+h2 {
+	font-size: var(--h2);
+}
+h3 {
+	font-size: var(--h3);
+}
+h4 {
+	font-size: var(--h4);
+}
+h5 {
+	font-size: var(--h5);
+}
+h6 {
+	font-size: var(--h6);
+}
+p {
+	font-size: var(--p);
+	font-weight: 300;
+}
+.p1 {
+	font-size: var(--p);
+}
+.p2 {
+	font-size: var(--p2);
+}
+.p3 {
+	font-size: var(--p3);
+}
+.p4 {
+	font-size: var(--p4);
+}
+.p5 {
+	font-size: var(--p5);
+}
+.p6 {
+	font-size: var(--p6);
+}
