@@ -43,6 +43,11 @@
 
 :root {
 	/*Font Sizes*/
+	--hx1: 4.5rem;
+	--hx2: 4.7rem;
+	--hx3: 4.9rem;
+	--hx4: 5.1rem;
+	--hx5: 5.3rem;
 	--h1: 3.4rem;
 	--h2: 2.8rem;
 	--h3: 2.6rem;
@@ -63,7 +68,6 @@ html * {
 	font-family: var(--font-gotham-normal), sans-serif;
 }
 
-/* 
 h1,
 h2,
 h3,
@@ -95,7 +99,7 @@ p,
 .p4 {
 	margin: 0.5rem 0 1rem 0;
 	margin-bottom: var(--margin-text);
-} */
+}
 
 h1 {
 	font-size: var(--h1);
@@ -136,4 +140,20 @@ p {
 }
 .p6 {
 	font-size: var(--p6);
+}
+
+.hx1 {
+	font-size: var(--hx1);
+}
+.hx2 {
+	font-size: var(--hx2);
+}
+.hx3 {
+	font-size: var(--hx3);
+}
+.hx4 {
+	font-size: var(--hx4);
+}
+.hx5 {
+	font-size: var(--hx5);
 }

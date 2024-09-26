@@ -4,7 +4,7 @@ import React from "react";
 
 import styles from "./navBar.module.css";
 
-export const NavBar = () => {
+const NavBar = () => {
 	return (
 		<div className={styles.navBar}>
 			{/* logo img  */}
@@ -27,3 +27,5 @@ export const NavBar = () => {
 		</div>
 	);
 };
+
+export default NavBar;

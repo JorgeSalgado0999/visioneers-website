@@ -1,7 +1,7 @@
+@import "flowbite";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "flowbite";
 
 :root {
 	--background: #ffffff;
@@ -50,6 +50,11 @@
 	--custom-gray-light2: #c9c9c9;
 	--custom-gray-dark1: #6b6b6b;
 	--custom-gray-dark2: #525252;
+
+	/* slider  */
+	--span-size: 4rem;
+	--icon-size: 3rem;
+	--indicator-size: 1rem;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -89,4 +94,36 @@ body {
 	.text-balance {
 		text-wrap: balance;
 	}
+}
+
+/* slider  */
+
+.customCarousel {
+	height: 100%;
+	width: 100%;
+}
+
+/* Para el control de la flecha derecha */
+[data-testid="carousel-right-control"] span {
+	width: var(--span-size) !important; /* Ancho del botón de control */
+	height: var(--span-size) !important; /* Alto del botón de control */
+}
+
+/* Para el control de la flecha izquierda */
+[data-testid="carousel-left-control"] span {
+	width: var(--span-size) !important;
+	height: var(--span-size) !important;
+}
+
+/* Para modificar el tamaño del icono SVG dentro de los controles */
+[data-testid="carousel-right-control"] svg,
+[data-testid="carousel-left-control"] svg {
+	width: var(--icon-size) !important; /* Ancho del icono SVG */
+	height: var(--icon-size) !important; /* Alto del icono SVG */
+}
+
+/* Para la paginacion */
+[data-testid="carousel-indicator"] {
+	width: var(--indicator-size) !important;
+	height: var(--indicator-size) !important;
 }

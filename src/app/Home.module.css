@@ -1,0 +1,169 @@
+.carouselContainer {
+	width: 100%; /* Ocupa todo el ancho del viewport */
+	height: 65vh; /* Máximo 50% de la altura del viewport */
+
+	/* Restricción para no exceder 50% de la altura */
+	/* max-height: 50vh;  */
+	/* Proporción de 1:3 (ancho 3 veces el alto) */
+	/* aspect-ratio: 3 / 1;  */
+	/* Asegúrate de ocultar el desbordamiento si es necesario */
+	/* overflow: hidden; */
+}
+
+.servicesContainer {
+	min-height: 40rem;
+	width: 100%;
+	/* aspect-ratio: 1922 / 620; */
+	height: fit-content;
+	padding: 3rem;
+
+	background-image: url("./../assets/img/HomeBG1.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	/* position: relative; */
+}
+/* .servicesBg {
+	/* position: absolute;
+	top: 0;
+	left: 0; * /
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+} */
+
+/* .servicesContent {
+	/* position: absolute;
+	top: 0;
+	left: 0; * /
+	width: 100%;
+	height: 100%;
+
+	padding: 3rem;
+} */
+
+.services {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	flex-wrap: wrap;
+}
+
+.service {
+	width: calc(25% - 5rem);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+@media (max-width: 85em) {
+	/* Hasta xl (1360px) */
+	.service {
+		width: calc(50% - 5rem); /* 50% en pantallas medianas */
+	}
+}
+
+@media (max-width: 48em) {
+	/* Hasta md (768px) */
+	.service {
+		width: 100%; /* 100% en pantallas pequeñas */
+	}
+}
+
+.bulletPointsContainer {
+	width: 100%;
+	min-height: 60rem;
+	/* aspect-ratio: 820 / 752; */
+	aspect-ratio: 1.986;
+	height: fit-content;
+	background-color: var(--custom-gray-light2);
+	padding: 0 5rem;
+
+	display: flex;
+	flex-direction: row;
+}
+@media (max-width: 85em) {
+	/* Hasta md (768px) */
+	.bulletPointsContainer {
+		aspect-ratio: auto;
+	}
+}
+.bulletsLeftSide {
+	width: 55%;
+	/* height: 100%; */
+
+	color: var(--white);
+
+	background-image: url("/HomeBulletPoints.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* background-color: red; */
+
+	z-index: 2;
+	position: relative;
+}
+@media (max-width: 85em) {
+	/* Hasta md (768px) */
+	.bulletsLeftSide {
+		background-image: none;
+	}
+}
+.bulletsTitle {
+	font-size: var(--hx5);
+	line-height: var(--hx5);
+	font-family: var(--font-gotham-bold), sans-serif;
+
+	position: absolute;
+	top: 40%;
+	left: 30%;
+}
+/* .bulletPointsImage {
+	height: 100%;
+	width: auto;
+	object-fit: contain;
+	z-index: 2;
+} */
+
+.bulletsRightSide {
+	width: 45%;
+	/* height: 100%; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+}
+.bulletPoint {
+	width: 145%;
+	height: auto;
+	padding: 2rem 0;
+	padding-left: 45%;
+	color: var(--white);
+	margin-left: -45%;
+
+	/* aspect-ratio: 1247 / 290; */
+	/* background-image: url("./../assets/img/HomeBulletPoint.png"); 
+	background-size: contain; 
+	background-position: center; 
+	background-repeat: no-repeat;  */
+
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		var(--custom-pink),
+		var(--custom-purple),
+		var(--custom-purple-dark1),
+		var(--custom-purple-dark2)
+	); /* Degradado de rosa a morado */
+
+	z-index: 1;
+}
+/* .bulletPointImage {
+} */

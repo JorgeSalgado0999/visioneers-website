@@ -32,3 +32,8 @@
 	text-align: center;
 	text-decoration: none;
 }
+.option:hover {
+	color: var(--custom-pink);
+	text-decoration: underline;
+	cursor: pointer;
+}

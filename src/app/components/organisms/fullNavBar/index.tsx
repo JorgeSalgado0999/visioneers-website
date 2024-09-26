@@ -1,9 +1,9 @@
 import React from "react";
-import {ContactBar} from "../../molecules/contactBar";
-import {NavBar} from "../../molecules/navBar";
+import ContactBar from "../../molecules/contactBar";
+import NavBar from "../../molecules/navBar";
 import styles from "./fullNavBar.module.css";
 
-export const FullNavBar = () => {
+const FullNavBar = () => {
 	return (
 		<div className={styles.fullNavBar}>
 			<ContactBar />
@@ -11,3 +11,5 @@ export const FullNavBar = () => {
 		</div>
 	);
 };
+
+export default FullNavBar;

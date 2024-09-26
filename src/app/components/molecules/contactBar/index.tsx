@@ -9,7 +9,7 @@ import {FaYoutube} from "react-icons/fa";
 import {FaPhone} from "react-icons/fa";
 import {FaWhatsapp} from "react-icons/fa";
 
-export const ContactBar = () => {
+const ContactBar = () => {
 	return (
 		<div className={styles.contactBar}>
 			<div className={styles.socialMedia}>
@@ -48,6 +48,7 @@ export const ContactBar = () => {
 				<div className={styles.whatsappButtonContainer}>
 					<a
 						href="https://wa.me/5213311855150"
+						target="_blank"
 						className={styles.whatsappButton}
 					>
 						<FaWhatsapp className={styles.whatsIcon} />
@@ -58,3 +59,5 @@ export const ContactBar = () => {
 		</div>
 	);
 };
+
+export default ContactBar;
