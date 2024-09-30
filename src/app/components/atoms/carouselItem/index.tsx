@@ -34,16 +34,19 @@ const CarouselItem = (props: CarouselItemProps) => {
 					<h2 className={styles.title}>{props.title} </h2>
 					<p className={styles.description}> {props.description} </p>
 				</div>
-				<div className={styles.whatsappButtonContainer}>
-					<a
-						href="https://wa.me/5213311855150"
-						target="_blank"
-						className={styles.whatsappButton}
-					>
-						<FaWhatsapp className={styles.whatsIcon} />
-						Contáctanos
-					</a>
-				</div>
+
+				{props.button && (
+					<div className={styles.whatsappButtonContainer}>
+						<a
+							href="https://wa.me/5213311855150"
+							target="_blank"
+							className={styles.whatsappButton}
+						>
+							<FaWhatsapp className={styles.whatsIcon} />
+							Contáctanos
+						</a>
+					</div>
+				)}
 			</div>
 		</div>
 	);

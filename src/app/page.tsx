@@ -15,6 +15,8 @@ import {
 	HomeIcon4,
 } from "@/assets";
 import Image from "next/image";
+import {FaWhatsapp} from "react-icons/fa";
+import {Footer} from "./components/organisms/footer";
 
 export default function Home() {
 	const carouselItems = [
@@ -117,7 +119,7 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className="w-full h-[50rem] px-20 py-[10rem] flex justify-center">
+				<section className="w-full h-[60rem] px-20 py-[10rem] flex justify-center">
 					<iframe
 						className="w-full max-w-3xl h-auto"
 						src="https://www.youtube.com/embed/EtmgJEAoCQI?si=bDhu4b27S58NHPY4"
@@ -165,17 +167,34 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className="w-full h-[50rem] px-20 py-[10rem] flex justify-center">
-					<iframe
-						className="w-full max-w-3xl h-auto"
-						src="https://www.youtube.com/embed/EtmgJEAoCQI?si=bDhu4b27S58NHPY4"
-						title="YouTube video player"
-						frameBorder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture web-share"
-						allowFullScreen
-					></iframe>
+				<section className="w-full h-[50rem] px-20 py-[10rem] flex-col justify-center items-center ">
+					<h2 className={`text-center hx2 font-bold mb-20`}>
+						<span className="text-customPurple "> Eleva </span> el potencial de
+						tu Empresa
+					</h2>
+					<p className=" text-center">
+						En <span className="font-bold">Visioneers</span>, creemos que la
+						clave para un liderazgo efectivo y una comunicación sólida es el
+						desarrollo integral de habilidades en inglés. Descubre cómo podemos
+						ayudar a tu organización a alcanzar nuevas alturas a través de
+						programas diseñados para transformar la manera en que tu equipo se
+						comunica, lidera y colabora.
+					</p>
+
+					<div className={styles.whatsappButtonContainer}>
+						<a
+							href="https://wa.me/5213311855150"
+							target="_blank"
+							className={styles.whatsappButton}
+						>
+							<FaWhatsapp className={styles.whatsIcon} />
+							Contáctanos
+						</a>
+					</div>
 				</section>
 			</main>
+
+			<Footer />
 		</div>
 	);
 }

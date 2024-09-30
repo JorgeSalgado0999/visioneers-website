@@ -1,0 +1,69 @@
+.footer {
+	height: 10rem;
+	width: 100%;
+
+	padding: 2rem 5rem;
+
+	background-color: var(--foreground);
+	color: var(--white);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo {
+	height: 100%;
+	width: 15rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menuOptions {
+	list-style: none;
+
+	display: flex;
+	align-items: center;
+	gap: 5rem;
+}
+
+.option {
+	max-width: 16rem;
+	white-space: normal;
+
+	font-size: var(--p);
+	font-family: var(--font-gotham-light), sans-serif;
+	font-weight: bold;
+	color: var(--dark);
+	text-align: center;
+	text-decoration: none;
+}
+.option:hover {
+	color: var(--custom-pink);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.phonesContainer {
+	display: flex;
+	gap: 3rem;
+}
+.phoneContainer {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+}
+.phoneIcon {
+	font-size: var(--p3);
+	color: var(--whhite);
+}
+.phoneNumber {
+	text-decoration: none;
+	font-size: var(--p2);
+	font-weight: 800;
+	color: var(--white);
+}
+.phoneNumber:hover {
+	text-decoration: underline;
+}

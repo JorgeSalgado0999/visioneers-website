@@ -1,53 +1,46 @@
 import Image from "next/image";
 import React from "react";
+import styles from "./footer.module.css";
+import {Logo} from "@/assets";
+import {FaPhone} from "react-icons/fa";
 
 export const Footer = () => {
 	return (
-		<footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-			<a
-				className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-				href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
+		<footer
+			className={`row-start-3 flex gap-6 flex-wrap items-center justify-center ${styles.footer}`}
+		>
+			{/* logo img  */}
+			<div className={styles.logo}>
 				<Image
-					src="https://nextjs.org/icons/file.svg"
-					alt="File icon"
-					width={16}
-					height={16}
+					src={Logo}
+					alt="logo"
+					layout="responsive"
+					width={150}
+					height={150}
 				/>
-				Learn
-			</a>
-			<a
-				className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-				href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<Image
-					aria-hidden
-					src="https://nextjs.org/icons/window.svg"
-					alt="Window icon"
-					width={16}
-					height={16}
-				/>
-				Examples
-			</a>
-			<a
-				className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-				href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<Image
-					aria-hidden
-					src="https://nextjs.org/icons/globe.svg"
-					alt="Globe icon"
-					width={16}
-					height={16}
-				/>
-				Go to nextjs.org →
-			</a>
+			</div>
+
+			<ul className={styles.menuOptions}>
+				<li className={styles.option}>Acompañamientos personalizados</li>
+				<li className={styles.option}>Servicios</li>
+				<li className={styles.option}>Nosotros</li>
+				<li className={styles.option}>Contacto</li>
+			</ul>
+
+			<div className={styles.phonesContainer}>
+				<div className={styles.phoneContainer}>
+					<FaPhone className={styles.phoneIcon} />
+					<a href="tel:+13322688620" className={styles.phoneNumber}>
+						1 33 2268 8620
+					</a>
+				</div>
+				<div className={styles.phoneContainer}>
+					<FaPhone className={styles.phoneIcon} />
+					<a href="tel:+13311855150" className={styles.phoneNumber}>
+						1 33 1185 5150
+					</a>
+				</div>
+			</div>
 		</footer>
 	);
 };
