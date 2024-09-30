@@ -1,0 +1,88 @@
+.banner {
+	width: 100%;
+	height: 40vh;
+
+	position: relative;
+}
+.bannerImage {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bannerTitle {
+	color: var(--black);
+	font-size: var(--hx5);
+	font-family: var(--font-gotham-bold), sans-serif;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.people {
+	width: 100%;
+	height: auto;
+	padding: 3rem 5rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 5rem;
+}
+
+.personCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.personCard img {
+	width: 15rem;
+	height: 15rem;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+}
+/* .personCard p:nth-of-type(1) { */
+.personCard h3 {
+	color: var(--black);
+	font-size: var(--h3);
+	font-family: var(--font-gotham-bold), sans-serif;
+	margin-top: 3rem;
+}
+.personCard p {
+	color: var(--gray);
+	font-size: var(--p);
+	font-family: var(--font-gotham-medium), sans-serif;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.contact {
+	width: 100%;
+	height: 40vh;
+	padding: 3rem 10%;
+	background-color: var(--custom-gray-light2);
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.leftSide {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1rem;
+}
+.leftSide h3 {
+	width: 80%;
+	color: var(--black);
+	font-size: var(--h1);
+	font-family: var(--font-gotham-bold), sans-serif;
+}

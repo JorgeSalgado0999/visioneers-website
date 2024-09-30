@@ -65,7 +65,7 @@
 }
 html * {
 	/* font-family: "Gotham", sans-serif; */
-	font-family: var(--font-gotham-normal), sans-serif;
+	font-family: var(--font-gotham-medium), sans-serif;
 }
 
 h1,

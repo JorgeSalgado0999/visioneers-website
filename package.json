@@ -6,7 +6,8 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"clean-cache": "rm -rf .next"
 	},
 	"dependencies": {
 		"flowbite": "^2.5.1",

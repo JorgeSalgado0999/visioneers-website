@@ -13,8 +13,11 @@ import HomeBG1 from "./img/HomeBG1.png";
 import HomeBulletPoints from "./img/HomeBulletPoints.png";
 import HomeBulletPoint from "./img/HomeBulletPoint.png";
 
+import BannerNosotros from "./img/BannerNosotros.png";
+
 export {
 	Logo,
+	//home
 	HomeBanner1,
 	HomeBanner2,
 	HomeBanner3,
@@ -25,4 +28,7 @@ export {
 	HomeBG1,
 	HomeBulletPoints,
 	HomeBulletPoint,
+
+	//nosotros
+	BannerNosotros,
 };
