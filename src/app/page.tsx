@@ -1,14 +1,7 @@
 // import Image from "next/image";
 import CustomCarousel from "./components/molecules/carousel";
 import styles from "./Home.module.css";
-import {
-	HomeBanner1,
-	HomeBanner2,
-	HomeIcon1,
-	HomeIcon2,
-	HomeIcon3,
-	HomeIcon4,
-} from "@/assets";
+import {HomeIcon1, HomeIcon2, HomeIcon3, HomeIcon4} from "@/assets";
 import Image from "next/image";
 import {FaWhatsapp} from "react-icons/fa";
 
@@ -17,16 +10,23 @@ export default function Home() {
 		{
 			title: "No enseñamos inglés, empoderamos empresas y personas",
 			description: "para una comunicación efectiva.",
-			img: HomeBanner1,
+			img: "/assets/img/HomeBanner1.png",
 			button: true,
 			alignLeft: true,
 		},
 		{
-			title: "No enseñamos inglés, empoderamos empresas y personas",
-			description: "para una comunicación efectiva.",
-			img: HomeBanner2,
+			title: "Corporate Education",
+			description: "",
+			img: "/assets/img/HomeBanner2.png",
 			button: true,
 			alignLeft: false,
+		},
+		{
+			title: "Executive English & Coaching to Empower Companies",
+			description: "",
+			img: "/assets/img/HomeBanner3.png",
+			button: true,
+			alignLeft: true,
 		},
 	];
 
@@ -65,7 +65,7 @@ export default function Home() {
 							alt="Desarrollo lingüístico"
 							height={150}
 							width={150}
-							objectFit="cover"
+							style={{objectFit: "cover"}}
 							className={styles.carouselItem_image}
 						/>
 						<p className={`text-center`}>Desarrollo lingüístico en inglés</p>

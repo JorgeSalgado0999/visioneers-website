@@ -2,7 +2,7 @@
 	height: 10rem;
 	width: 100%;
 
-	padding: 2rem 5rem;
+	padding: 2rem 4rem;
 
 	background-color: var(--foreground);
 	color: var(--white);
@@ -10,6 +10,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 15rem;
 }
 .logo {
 	height: 100%;
@@ -25,13 +26,16 @@
 
 	display: flex;
 	align-items: center;
-	gap: 5rem;
+	justify-content: center;
+	gap: 4rem;
 }
 
 .option {
 	max-width: 16rem;
 	white-space: normal;
-
+	text-align: center;
+}
+.option a {
 	font-size: var(--p);
 	font-family: var(--font-gotham-light), sans-serif;
 	font-weight: bold;
@@ -60,7 +64,8 @@
 }
 .phoneNumber {
 	text-decoration: none;
-	font-size: var(--p2);
+	font-size: var(--p);
+	font-family: var(--font-gotham-light), sans-serif;
 	font-weight: 800;
 	color: var(--white);
 }

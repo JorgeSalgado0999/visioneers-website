@@ -14,6 +14,8 @@ import HomeBulletPoints from "./img/HomeBulletPoints.png";
 import HomeBulletPoint from "./img/HomeBulletPoint.png";
 
 import BannerNosotros from "./img/BannerNosotros.png";
+import BannerContacto from "./img/BannerContacto.png";
+import World from "./img/World.png";
 
 export {
 	Logo,
@@ -31,4 +33,7 @@ export {
 
 	//nosotros
 	BannerNosotros,
+	//contacto
+	BannerContacto,
+	World,
 };

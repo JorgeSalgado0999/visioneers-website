@@ -1,0 +1,112 @@
+.banner {
+	width: 100%;
+	height: 40vh;
+
+	position: relative;
+}
+.bannerImage {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bannerTitle {
+	color: var(--white);
+	font-size: var(--hx5);
+	font-family: var(--font-gotham-bold), sans-serif;
+
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	transform: translate(-50%, -50%) rotate(-90deg);
+	z-index: 2;
+}
+
+.contact {
+	width: 100%;
+	height: auto;
+	padding: 3rem 5rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contact h2 {
+	color: var(--black);
+	font-size: var(--h3);
+	font-family: var(--font-gotham-medium), sans-serif;
+}
+.contact h3 {
+	color: var(--custom-pink);
+	font-size: var(--hx1);
+	font-family: var(--font-gotham-bold), sans-serif;
+}
+
+.columns {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20rem;
+}
+.leftSide {
+	width: calc(50% - 20rem);
+	display: flex;
+	align-items: flex-end;
+}
+
+.rightSide {
+	width: calc(50% - 20rem);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10rem;
+}
+.box {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+.boxRight {
+}
+.boxRight h5 {
+	font-size: var(--h5);
+	margin: 0;
+}
+.boxRight p {
+	font-size: var(--h5);
+	font-family: var(--font-gotham-bold), sans-serif;
+	margin: 0;
+}
+
+.phoneIcon,
+.whatsIcon {
+	font-size: 7rem;
+	color: var(--custom-pink);
+}
+
+.whatsappButton {
+	text-decoration: none;
+	height: 80%;
+	width: fit-content;
+	padding: 1rem 1.5rem;
+	border-radius: 5rem;
+	margin-top: 2rem;
+
+	background-color: var(--custom-green);
+	color: var(--black);
+
+	font-size: var(--p2);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+.whatsappButton:hover {
+	background-color: var(--custom-green-dark1);
+	text-decoration: underline;
+}

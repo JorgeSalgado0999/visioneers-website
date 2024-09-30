@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./../styles/globals.css";
 import "./../styles/fonts.css";
 import FullNavBar from "./components/organisms/fullNavBar";
-import {Footer} from "flowbite-react";
+import {Footer} from "./components/organisms/footer";
 
 const geistSans = localFont({
 	src: "./../assets/fonts/GeistVF.woff",
