@@ -2,13 +2,12 @@ import Image from "next/image";
 import React from "react";
 
 import styles from "./carouselItem.module.css";
-import {HomeBanner1} from "@/assets";
 import {FaWhatsapp} from "react-icons/fa";
 
 // set interface to define props
 interface CarouselItemProps {
 	// define props here
-	img: unknown;
+	img: string;
 	title: string;
 	description: string;
 	button: boolean;

@@ -2,13 +2,9 @@
 import FullNavBar from "./components/organisms/fullNavBar";
 import CustomCarousel from "./components/molecules/carousel";
 import styles from "./Home.module.css";
-import {title} from "process";
 import {
 	HomeBanner1,
 	HomeBanner2,
-	HomeBG1,
-	HomeBulletPoint,
-	HomeBulletPoints,
 	HomeIcon1,
 	HomeIcon2,
 	HomeIcon3,

@@ -22,7 +22,7 @@ const CustomCarousel = (props: CustomCarouselProps) => {
 						key={index}
 						title={item.title}
 						description={item.description}
-						img={item.img}
+						img={String(item.img)}
 						button={item.button}
 						alignLeft={item.alignLeft}
 					/>
