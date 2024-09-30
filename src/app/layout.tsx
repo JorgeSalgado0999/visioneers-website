@@ -51,7 +51,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body
 				className={`${geistSans.variable} ${geistMono.variable}
-        ${gothamLight.variable} ${gothamNormal.variable} ${gothamMedium.variable} ${gothamBold.variable}
+        ${gothamLight.variable} ${gothamMedium.variable} ${gothamBold.variable}
         antialiased`}
 			>
 				<FullNavBar />
