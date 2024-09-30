@@ -76,7 +76,7 @@
 }
 html {
 	font-size: 10px;
-	font-family: "Gotham";
+	font-family: var(--font-gotham-medium), sans-serif;
 }
 body {
 	-webkit-box-sizing: border-box;

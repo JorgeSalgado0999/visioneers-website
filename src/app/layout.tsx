@@ -2,6 +2,8 @@ import type {Metadata} from "next";
 import localFont from "next/font/local";
 import "./../styles/globals.css";
 import "./../styles/fonts.css";
+import FullNavBar from "./components/organisms/fullNavBar";
+import {Footer} from "flowbite-react";
 
 const geistSans = localFont({
 	src: "./../assets/fonts/GeistVF.woff",
@@ -21,17 +23,10 @@ const gothamLight = localFont({
 	style: "normal",
 });
 
-const gothamNormal = localFont({
-	src: "./../assets/fonts/gotham/gotham-medium.otf",
-	variable: "--font-gotham-normal",
-	weight: "400", // normal weight
-	style: "normal",
-});
-
 const gothamMedium = localFont({
 	src: "./../assets/fonts/gotham/Gotham-Medium.otf",
 	variable: "--font-gotham-medium",
-	weight: "600",
+	weight: "400",
 	style: "normal",
 });
 
@@ -59,7 +54,9 @@ export default function RootLayout({
         ${gothamLight.variable} ${gothamNormal.variable} ${gothamMedium.variable} ${gothamBold.variable}
         antialiased`}
 			>
+				<FullNavBar />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);
