@@ -1,0 +1,99 @@
+.banner {
+	width: 100%;
+	height: 40vh;
+
+	position: relative;
+}
+.bannerImage {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bannerTitle {
+	width: 40%;
+	color: var(--white);
+	font-size: var(--hx5);
+	line-height: var(--hx5);
+	font-family: var(--font-gotham-bold), sans-serif;
+	text-align: right;
+
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	transform: translate(0, -50%);
+	z-index: 2;
+}
+
+.mentoriasContent {
+	padding: 4rem 15%;
+}
+.mentoriasText {
+	text-align: center;
+	font-size: var(--h5);
+}
+
+.keyBenefits {
+	width: 100%;
+	height: auto;
+	padding: 4rem 15%;
+
+	background-color: var(--custom-gray-light2);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10rem;
+}
+
+.list {
+	list-style-type: none; /* Elimina el bullet point predeterminado */
+	padding-left: 0;
+}
+
+.listItem {
+	font-size: var(--p);
+	margin-bottom: 1.5rem; /* Espacio entre los elementos */
+}
+
+.customBullet {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	/* background-color: var(--custom-pink); */
+	border: 2px solid var(--custom-pink);
+	border-radius: 50%;
+	margin-right: 0.75rem;
+}
+
+.highlightedText {
+	font-family: var(--font-gotham-bold), sans-serif;
+	font-weight: bold;
+	color: var(--custom-pink);
+}
+
+.contact {
+	width: 100%;
+	height: 40vh;
+	padding: 3rem 10%;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.leftSide {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1rem;
+}
+.leftSide h3 {
+	width: 80%;
+	color: var(--black);
+	font-size: var(--h1);
+	font-family: var(--font-gotham-bold), sans-serif;
+}

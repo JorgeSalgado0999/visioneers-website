@@ -17,6 +17,12 @@ import BannerNosotros from "./img/BannerNosotros.png";
 import BannerContacto from "./img/BannerContacto.png";
 import World from "./img/World.png";
 
+import BannerMentorias from "./img/BannerMentorias.png";
+
+import BannerServicios from "./img/BannerServicios.png";
+import servicesBG1 from "./img/servicesBG1.png";
+import servicesBg2 from "./img/servicesBg2.png";
+
 export {
 	Logo,
 	//home
@@ -36,4 +42,12 @@ export {
 	//contacto
 	BannerContacto,
 	World,
+
+	//mentorias
+	BannerMentorias,
+
+	//servicios
+	BannerServicios,
+	servicesBG1,
+	servicesBg2,
 };
