@@ -25,11 +25,76 @@
 	z-index: 2;
 }
 
+.infoSection {
+	width: 100%;
+	min-height: 50vh;
+	height: auto;
+	padding: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+}
+.infoSection2 {
+	background-color: var(--custom-gray-light2);
+}
+.servicesContainer {
+	width: 60%;
+	height: 100%;
+
+	padding: 3rem 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+}
+.service {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.serviceIcon {
+	width: 12rem;
+	height: 12rem;
+}
+.service h3 {
+	color: var(--black);
+	font-size: var(--h3);
+	font-family: var(--font-gotham-bold), sans-serif;
+	text-align: center;
+}
+.service p {
+	color: var(--black);
+	font-size: var(--p);
+	font-family: var(--font-gotham-medium), sans-serif;
+	text-align: center;
+}
+.bgImageContainer {
+	width: 40%;
+	min-height: 100%;
+	flex-grow: 1;
+}
+.bgImage {
+	width: 100%;
+	min-height: 100%;
+
+	object-fit: cover;
+}
+.bgImage2 {
+	width: 100%;
+	height: auto;
+
+	object-fit: contain;
+}
+
 .contact {
 	width: 100%;
 	height: 40vh;
 	padding: 3rem 10%;
-	background-color: var(--custom-gray-light2);
 
 	display: flex;
 	justify-content: space-around;
