@@ -1,0 +1,15 @@
+@media (max-width: 48em) {
+	/* Hasta xl (1360px) */
+	.desktop {
+		display: none;
+	}
+}
+.mobile {
+	display: none;
+}
+@media (max-width: 48em) {
+	/* Hasta xl (1360px) */
+	.mobile {
+		display: block;
+	}
+}

@@ -1,4 +1,6 @@
-.contactBar {
+.navBar {
+}
+.topBar {
 	height: 4rem;
 	width: 100%;
 	padding: 3rem 1rem;
@@ -14,9 +16,17 @@
 	align-items: center;
 }
 
-.socialMedia {
+.menuButtonContainer {
 	display: flex;
 	gap: 1rem;
+}
+.menubuttoncontainer:hover,
+.menuButton:hover {
+	cursor: pointer;
+}
+.menuButton {
+	font-size: var(--hx1);
+	color: var(--white);
 }
 
 .iconContainer {
@@ -37,6 +47,12 @@
 .phonesContainer {
 	display: flex;
 	gap: 1.3rem;
+}
+@media (max-width: 35em) {
+	/* Hasta xl (1360px) */
+	.phonesContainer {
+		display: none;
+	}
 }
 .phoneContainer {
 	display: flex;
@@ -83,4 +99,61 @@
 	color: var(--white);
 }
 
-/* barra responsive */
+/* barra responsive HiddenMenu */
+.hiddenMenu {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(77, 77, 77, 0.8);
+	border-radius: 60%;
+	padding: 5rem 2rem;
+
+	/* position: fixed; */
+	position: fixed;
+	left: -110%;
+	top: -10%;
+	transition: all 0.8s ease-in-out;
+	z-index: 1000;
+}
+.show {
+	border-radius: 0;
+	left: 0;
+	top: 0;
+}
+.navButtonContainer {
+	display: flex;
+	justify-content: center;
+}
+.menuButtonClose {
+	font-size: 8rem;
+	color: var(--white);
+}
+
+.navList {
+	margin-top: 3rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+.navItem {
+	width: 100%;
+	height: fit-content;
+	padding: 2rem 0 0.5rem 0;
+	text-align: center;
+	font-size: var(--h5);
+	line-height: var(--h5);
+	color: var(--white);
+	text-decoration: none;
+	border-bottom: 2px solid var(--custom-gray-light2);
+}
+.navItem a:hover {
+	text-decoration: underline;
+	color: var(--custom-pink);
+	cursor: pointer;
+}
+.navItem:hover a {
+	text-decoration: underline;
+	color: var(--custom-pink);
+	cursor: pointer;
+}
