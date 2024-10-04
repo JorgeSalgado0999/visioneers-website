@@ -10,7 +10,6 @@
 		"clean-cache": "rm -rf .next"
 	},
 	"dependencies": {
-		"flowbite": "^2.5.1",
 		"flowbite-react": "^0.10.1",
 		"next": "14.2.13",
 		"react": "^18",

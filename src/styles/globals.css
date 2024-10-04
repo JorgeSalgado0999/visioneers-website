@@ -1,4 +1,3 @@
-@import "flowbite";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -108,11 +107,21 @@ body {
 	width: var(--span-size) !important; /* Ancho del botón de control */
 	height: var(--span-size) !important; /* Alto del botón de control */
 }
+@media (max-width: 48em) {
+	[data-testid="carousel-right-control"] span {
+		display: none;
+	}
+}
 
 /* Para el control de la flecha izquierda */
 [data-testid="carousel-left-control"] span {
 	width: var(--span-size) !important;
 	height: var(--span-size) !important;
+}
+@media (max-width: 48em) {
+	[data-testid="carousel-left-control"] span {
+		display: none;
+	}
 }
 
 /* Para modificar el tamaño del icono SVG dentro de los controles */

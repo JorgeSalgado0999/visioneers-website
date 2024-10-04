@@ -16,7 +16,7 @@ interface CustomCarouselProps {
 const CustomCarousel = (props: CustomCarouselProps) => {
 	return (
 		<div className={`${styles.customCarousel}`}>
-			<Carousel pauseOnHover slideInterval={5000} slide={false}>
+			<Carousel pauseOnHover slideInterval={4000} slide={true}>
 				{props.items.map((item, index) => (
 					<CarouselItem
 						key={index}
