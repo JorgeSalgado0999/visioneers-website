@@ -101,7 +101,7 @@ export default function Home() {
 				</section>
 
 				<section className={` ${styles.servicesContainer}`}>
-					<h2 className={`text-center hx2 font-bold mb-20`}>
+					<h2 className={`${styles.servicesTitle}`}>
 						Nuestros <span className="text-customPurple"> Servicios</span>
 					</h2>
 					<div className={styles.services}>
