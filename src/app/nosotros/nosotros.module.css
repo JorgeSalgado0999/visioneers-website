@@ -35,11 +35,30 @@
 	align-items: flex-start;
 	gap: 5rem;
 }
+@media (max-width: 48em) {
+	.people {
+		flex-wrap: wrap;
+		padding: 2rem 3rem;
+
+		gap: 3rem;
+	}
+}
 
 .personCard {
+	width: calc(33.3% - 5rem);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+@media (max-width: 48em) {
+	.personCard {
+		width: calc(50% - 3rem);
+	}
+}
+@media (max-width: 30em) {
+	.personCard {
+		width: 100%;
+	}
 }
 .personCard img {
 	width: 15rem;
@@ -53,6 +72,7 @@
 	color: var(--black);
 	font-size: var(--h3);
 	font-family: var(--font-gotham-bold), sans-serif;
+	text-align: center;
 	margin-top: 3rem;
 }
 .personCard p {

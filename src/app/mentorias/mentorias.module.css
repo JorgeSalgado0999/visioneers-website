@@ -27,9 +27,41 @@
 	transform: translate(0, -50%);
 	z-index: 2;
 }
+@media (max-width: 64em) {
+	.bannerTitle {
+		width: 60%;
+		font-size: var(--hx3);
+		line-height: var(--hx3);
+
+		right: 2rem;
+	}
+}
+@media (max-width: 48em) {
+	.bannerTitle {
+		width: 70%;
+		font-size: var(--h1);
+		line-height: var(--h1);
+
+		right: 2rem;
+	}
+}
+@media (max-width: 30em) {
+	.bannerTitle {
+		width: 90%;
+		font-size: var(--h2);
+		line-height: var(--h2);
+
+		right: 2rem;
+	}
+}
 
 .mentoriasContent {
 	padding: 4rem 15%;
+}
+@media (max-width: 48em) {
+	.mentoriasContent {
+		padding: 2rem 2rem;
+	}
 }
 .mentoriasText {
 	text-align: center;
@@ -39,18 +71,79 @@
 .keyBenefits {
 	width: 100%;
 	height: auto;
-	padding: 4rem 15%;
+	padding: 4rem 5rem;
 
 	background-color: var(--custom-gray-light2);
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 10rem;
+	gap: 5rem;
+}
+@media (max-width: 64em) {
+	.keyBenefits {
+		padding: 2rem 2rem;
+	}
+}
+@media (max-width: 48em) {
+	.keyBenefits {
+		padding: 2rem 2rem;
+
+		flex-direction: column;
+		gap: 2rem;
+	}
+}
+
+.leftSide {
+	min-width: calc(60% - 5rem);
+	min-height: 50vh;
+	padding: 0;
+
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.video {
+	width: 100%; /* El iframe ocupará el 100% del contenedor */
+	max-width: 100%; /* Para limitar el ancho máximo */
+	aspect-ratio: 16 / 9; /* Mantiene la relación de aspecto 16:9 */
+	border: 0;
+}
+@media (max-width: 48em) {
+	.leftSide {
+		min-width: 100%;
+		min-height: 40vh;
+		padding: 0 2rem;
+		flex-grow: 1;
+	}
+	.video {
+		width: 100%;
+		max-width: 98%;
+	}
+}
+
+.rightSide {
+	min-width: calc(40% - 5rem);
+
+	flex-grow: 1;
+}
+@media (max-width: 48em) {
+	.rightSide {
+		min-width: 100%;
+		height: auto;
+		flex-grow: 1;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
 }
 
 .list {
-	list-style-type: none; /* Elimina el bullet point predeterminado */
+	list-style-type: none;
 	padding-left: 0;
 }
 

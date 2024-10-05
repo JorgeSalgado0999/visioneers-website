@@ -48,16 +48,7 @@ export default function Nosotros() {
 			</section>
 
 			<section className={styles.contact}>
-				<div className={styles.leftSide}>
-					<h3>¿Deseas una cotización a la medida?</h3>
-					<p>
-						Déjanos tus datos y nos pondremos en contacto contigo tan pronto nos
-						sea posible.
-					</p>
-				</div>
-				<div className="rightSide">
-					<h5>Formulario</h5>
-				</div>
+				<h3>¿Deseas una cotización a la medida?</h3>
 			</section>
 		</main>
 	);

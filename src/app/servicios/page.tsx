@@ -9,6 +9,7 @@ import {
 	servicesBG1,
 	servicesBg2,
 } from "@/assets";
+import {FaWhatsapp} from "react-icons/fa";
 
 export default function Servicios() {
 	return (
@@ -106,10 +107,21 @@ export default function Servicios() {
 
 			<section className={styles.contact}>
 				<div className={styles.leftSide}>
-					<h3>Eleva el Potencial de tu Empresa</h3>
+					<h3>
+						{" "}
+						<span className={styles.highlight}>Eleva</span> el Potencial de tu
+						Empresa
+					</h3>
 				</div>
-				<div className="rightSide">
-					<h5>Contáctanos</h5>
+				<div className={styles.whatsappButtonContainer}>
+					<a
+						href="https://wa.me/5213311855150"
+						target="_blank"
+						className={styles.whatsappButton}
+					>
+						<FaWhatsapp className={styles.whatsIcon} />
+						Contáctanos
+					</a>
 				</div>
 			</section>
 		</main>

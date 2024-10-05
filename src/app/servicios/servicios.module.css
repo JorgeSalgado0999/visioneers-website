@@ -38,6 +38,13 @@
 .infoSection2 {
 	background-color: var(--custom-gray-light2);
 }
+@media (max-width: 48em) {
+	.infoSection,
+	.infoSection2 {
+		flex-wrap: wrap;
+	}
+}
+
 .servicesContainer {
 	width: 60%;
 	height: 100%;
@@ -49,6 +56,18 @@
 	align-items: center;
 	gap: 5rem;
 }
+@media (max-width: 48em) {
+	.servicesContainer {
+		width: 100%;
+		justify-content: space-between;
+		padding: 2rem 3rem;
+	}
+}
+@media (max-width: 30em) {
+	.servicesContainer {
+		flex-wrap: wrap;
+	}
+}
 .service {
 	width: 40%;
 	height: 100%;
@@ -56,6 +75,16 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+@media (max-width: 48em) {
+	.service {
+		width: 50%;
+	}
+}
+@media (max-width: 30em) {
+	.service {
+		width: 100%;
+	}
 }
 .serviceIcon {
 	width: 12rem;
@@ -90,6 +119,11 @@
 
 	object-fit: contain;
 }
+@media (max-width: 48em) {
+	.bgImageContainer {
+		display: none;
+	}
+}
 
 .contact {
 	width: 100%;
@@ -97,19 +131,69 @@
 	padding: 3rem 10%;
 
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
+	gap: 5rem;
+}
+@media (max-width: 48em) {
+	.contact {
+		padding: 2rem 3rem;
+
+		flex-direction: column;
+		justify-content: center;
+		gap: 2rem;
+	}
 }
 .leftSide {
-	width: 40%;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 1rem;
 }
 .leftSide h3 {
-	width: 80%;
+	width: 100%;
 	color: var(--black);
 	font-size: var(--h1);
 	font-family: var(--font-gotham-bold), sans-serif;
+	text-align: center;
+}
+@media (max-width: 48em) {
+	.leftSide {
+		width: 100%;
+	}
+	.leftSide h3 {
+		width: 100%;
+	}
+}
+
+.highlight {
+	color: var(--custom-pink);
+	font-weight: bold;
+}
+
+.whatsappButton {
+	text-decoration: none;
+	height: 85%;
+	width: fit-content;
+	padding: 0.5rem 1rem;
+	border-radius: 5rem;
+
+	background-color: var(--custom-green);
+	color: var(--black);
+
+	font-size: var(--h5);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem 0.5rem;
+}
+.whatsappButton:hover {
+	background-color: var(--custom-green-dark1);
+	text-decoration: underline;
+}
+.whatsIcon {
+	font-size: var(--h5);
+	color: var(--black);
 }
