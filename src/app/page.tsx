@@ -154,6 +154,7 @@ export default function Home() {
 
 				<section className={styles.videoContainer}>
 					<iframe
+						loading="lazy"
 						className={styles.video}
 						src="https://www.youtube.com/embed/EtmgJEAoCQI?si=bDhu4b27S58NHPY4"
 						title="Visioneers Video"

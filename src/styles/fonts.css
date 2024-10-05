@@ -67,6 +67,23 @@ html * {
 	/* font-family: "Gotham", sans-serif; */
 	font-family: var(--font-gotham-medium), sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+.p1,
+.p2,
+.p3,
+.p4,
+.hx1,
+.hx2,
+.hx3,
+.hx4,
+.hx5 {
+	font-display: swap;
+}
 
 h1,
 h2,

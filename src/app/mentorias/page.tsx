@@ -103,6 +103,7 @@ export default function Mentorias() {
 				<section className={`${styles.keyBenefits}`}>
 					<div className={styles.leftSide}>
 						<iframe
+							loading="lazy"
 							className={styles.video}
 							src="https://www.youtube.com/embed/EtmgJEAoCQI?si=bDhu4b27S58NHPY4"
 							title="Visioneers Video"
