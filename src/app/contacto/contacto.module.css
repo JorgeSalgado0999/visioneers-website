@@ -46,11 +46,16 @@
 .contact {
 	width: 100%;
 	height: auto;
-	padding: 3rem 5rem;
+	padding: 3rem 4rem;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+@media (max-width: 64em) {
+	.contact {
+		padding: 2rem;
+	}
 }
 @media (max-width: 48em) {
 	.contact {
@@ -81,7 +86,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 20rem;
+	gap: 15rem;
+}
+@media (max-width: 64em) {
+	.columns {
+		gap: 5rem;
+	}
 }
 @media (max-width: 48em) {
 	.columns {
@@ -91,9 +101,14 @@
 	}
 }
 .leftSide {
-	width: calc(50% - 20rem);
+	width: calc(50% - 15rem);
 	display: flex;
 	align-items: flex-end;
+}
+@media (max-width: 64em) {
+	.leftSide {
+		width: calc(50% - 5rem);
+	}
 }
 @media (max-width: 48em) {
 	.leftSide {
@@ -102,11 +117,16 @@
 }
 
 .rightSide {
-	width: calc(50% - 20rem);
+	width: calc(50% - 15rem);
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 10rem;
+}
+@media (max-width: 64em) {
+	.rightSide {
+		width: calc(50% - 5rem);
+	}
 }
 @media (max-width: 48em) {
 	.rightSide {
