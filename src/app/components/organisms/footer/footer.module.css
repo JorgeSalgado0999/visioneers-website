@@ -1,8 +1,13 @@
 .footer {
+	width: 100%;
+	height: auto;
+}
+
+.firstRow {
 	height: 10rem;
 	width: 100%;
 
-	padding: 2rem 4rem;
+	padding: 2rem 3rem;
 
 	background-color: var(--foreground);
 	color: var(--white);
@@ -10,7 +15,24 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 15rem;
+	gap: 12rem;
+}
+@media (max-width: 90em) {
+	.firstRow {
+		height: auto;
+		flex-wrap: wrap;
+
+		justify-content: center;
+		gap: 3rem 5rem;
+	}
+}
+@media (max-width: 64em) {
+	/* Hasta xl (1360px) */
+	.firstRow {
+		height: auto;
+		flex-direction: column;
+		gap: 5rem 0;
+	}
 }
 .logo {
 	height: 100%;
@@ -20,6 +42,13 @@
 	justify-content: center;
 	align-items: center;
 }
+@media (max-width: 64em) {
+	/* Hasta xl (1360px) */
+	.logo {
+		width: 20rem;
+		height: auto;
+	}
+}
 
 .menuOptions {
 	list-style: none;
@@ -28,6 +57,13 @@
 	align-items: center;
 	justify-content: center;
 	gap: 4rem;
+}
+@media (max-width: 64em) {
+	/* Hasta xl (1360px) */
+	.menuOptions {
+		flex-direction: column;
+		gap: 2rem;
+	}
 }
 
 .option {
@@ -53,10 +89,29 @@
 	display: flex;
 	gap: 3rem;
 }
+@media (max-width: 90em) {
+	.phonesContainer {
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 64em) {
+	.phonesContainer {
+		flex-direction: column;
+		justify-content: center;
+	}
+}
 .phoneContainer {
 	display: flex;
 	align-items: center;
 	gap: 0.8rem;
+}
+@media (max-width: 90em) {
+	.phoneContainer {
+		justify-content: center;
+	}
+	.phoneContainer a {
+		text-align: center;
+	}
 }
 .phoneIcon {
 	font-size: var(--p3);
@@ -71,4 +126,42 @@
 }
 .phoneNumber:hover {
 	text-decoration: underline;
+}
+
+/* social bar  */
+.socialMedia {
+	display: none;
+}
+@media (max-width: 48em) {
+	.socialMedia {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		/* gap: 1.2rem; */
+	}
+
+	.iconContainer {
+		height: auto;
+		width: auto;
+	}
+	.icon {
+		font-size: var(--hx1);
+	}
+}
+
+/* second Row  */
+.secondRow {
+	width: 100%;
+	height: auto;
+	background-color: var(--custom-pink-dark1);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.secondRow p {
+	font-size: var(--p);
+	font-family: var(--font-gotham-light), sans-serif;
+	font-weight: bold;
+	color: var(--white);
 }
