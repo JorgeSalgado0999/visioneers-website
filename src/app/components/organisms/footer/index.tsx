@@ -8,7 +8,6 @@ import {FaInstagram} from "react-icons/fa";
 import {FaTiktok} from "react-icons/fa";
 import {FaLinkedin} from "react-icons/fa";
 import {FaYoutube} from "react-icons/fa";
-import {FaWhatsapp} from "react-icons/fa";
 import Link from "next/link";
 
 export const Footer = () => {
@@ -43,6 +42,21 @@ export const Footer = () => {
 					</li>
 				</ul>
 
+				<div className={styles.phonesContainer}>
+					<div className={styles.phoneContainer}>
+						<FaPhone className={styles.phoneIcon} />
+						<a href="tel:+13322688620" className={styles.phoneNumber}>
+							1 33 2268 8620
+						</a>
+					</div>
+					<div className={styles.phoneContainer}>
+						<FaPhone className={styles.phoneIcon} />
+						<a href="tel:+13311855150" className={styles.phoneNumber}>
+							1 33 1185 5150
+						</a>
+					</div>
+				</div>
+
 				<div className={styles.socialMedia}>
 					<div className={styles.iconContainer}>
 						<FaFacebook className={styles.icon} />
@@ -60,8 +74,6 @@ export const Footer = () => {
 						<FaYoutube className={styles.icon} />
 					</div>
 				</div>
-
-				<div className={styles.f}></div>
 			</div>
 			<div className={styles.secondRow}>
 				<p className={styles.copyRight}>
