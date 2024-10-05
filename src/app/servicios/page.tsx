@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Head from "next/head";
 import styles from "./servicios.module.css";
 import {
 	BannerServicios,
@@ -11,13 +12,57 @@ import {
 } from "@/assets";
 import {FaWhatsapp} from "react-icons/fa";
 
+export const metadata = {
+	title:
+		"Servicios | Visioneers - Desarrollo Lingüístico y Comunicación Empresarial",
+	description:
+		"Descubre los servicios que Visioneers ofrece: desarrollo lingüístico, manejo de conversaciones difíciles, inteligencia emocional y team building en inglés.",
+};
+
 export default function Servicios() {
 	return (
 		<main className="w-full">
+			<Head>
+				<title>
+					Servicios | Visioneers - Desarrollo Lingüístico y Comunicación
+					Empresarial
+				</title>
+				<meta
+					name="description"
+					content="Descubre los servicios que Visioneers ofrece: desarrollo lingüístico, manejo de conversaciones difíciles, inteligencia emocional y team building en inglés."
+				/>
+				<meta
+					name="keywords"
+					content="servicios, desarrollo lingüístico, team building, inteligencia emocional, Visioneers"
+				/>
+				<meta property="og:type" content="website" />
+				<meta
+					property="og:title"
+					content="Servicios | Visioneers - Desarrollo Lingüístico y Comunicación Empresarial"
+				/>
+				<meta
+					property="og:description"
+					content="Descubre los servicios que Visioneers ofrece: desarrollo lingüístico, manejo de conversaciones difíciles, inteligencia emocional y team building en inglés."
+				/>
+				<meta
+					property="og:image"
+					content="https://visioneers.com/images/banner-servicios.png"
+				/>
+				<meta property="og:url" content="https://visioneers.com/servicios" />
+				<meta name="twitter:card" content="summary_large_image" />
+			</Head>
+
+			{/* H1 oculto para SEO */}
+			<h1 style={{display: "none"}}>
+				Servicios de Visioneers - Desarrollo Lingüístico y Comunicación
+				Empresarial
+			</h1>
+
+			{/* Banner */}
 			<section className={styles.banner}>
 				<Image
 					src={BannerServicios}
-					alt="Nosotros"
+					alt="Conoce nuestros servicios en Visioneers"
 					layout="fill"
 					objectFit="cover"
 					className={styles.bannerImage}
@@ -25,12 +70,13 @@ export default function Servicios() {
 				<h2 className={styles.bannerTitle}>Servicios</h2>
 			</section>
 
+			{/* Servicios - Sección 1 */}
 			<section className={`${styles.infoSection}`}>
 				<div className={styles.servicesContainer}>
 					<div className={styles.service}>
 						<Image
 							src={HomeIcon1}
-							alt="servicios icono 1"
+							alt="Icono Desarrollo Lingüístico"
 							className={styles.serviceIcon}
 						/>
 						<h3>Desarrollo Lingüístico en Inglés</h3>
@@ -44,7 +90,7 @@ export default function Servicios() {
 					<div className={styles.service}>
 						<Image
 							src={HomeIcon2}
-							alt="servicios icono 2"
+							alt="Icono Manejo de Conversaciones Difíciles"
 							className={styles.serviceIcon}
 						/>
 						<h3>Manejo de Conversaciones Difíciles</h3>
@@ -58,18 +104,19 @@ export default function Servicios() {
 				<div className={styles.bgImageContainer}>
 					<Image
 						src={servicesBG1}
-						alt="servicios imagen 1"
+						alt="Fondo servicios Visioneers"
 						objectFit="cover"
 						className={styles.bgImage}
 					/>
 				</div>
 			</section>
 
+			{/* Servicios - Sección 2 */}
 			<section className={`${styles.infoSection} ${styles.infoSection2}`}>
 				<div className={styles.bgImageContainer}>
 					<Image
 						src={servicesBg2}
-						alt="servicios imagen 1"
+						alt="Fondo adicional de servicios"
 						className={styles.bgImage2}
 					/>
 				</div>
@@ -77,7 +124,7 @@ export default function Servicios() {
 					<div className={styles.service}>
 						<Image
 							src={HomeIcon3}
-							alt="servicios icono 1"
+							alt="Icono Inteligencia Emocional"
 							className={styles.serviceIcon}
 						/>
 						<h3>Inteligencia Emocional en la Comunicación</h3>
@@ -91,7 +138,7 @@ export default function Servicios() {
 					<div className={styles.service}>
 						<Image
 							src={HomeIcon4}
-							alt="servicios icono 4"
+							alt="Icono Team Building"
 							className={styles.serviceIcon}
 						/>
 						<h3>Team Building</h3>
@@ -105,10 +152,10 @@ export default function Servicios() {
 				</div>
 			</section>
 
+			{/* Sección de contacto */}
 			<section className={styles.contact}>
 				<div className={styles.leftSide}>
 					<h3>
-						{" "}
 						<span className={styles.highlight}>Eleva</span> el Potencial de tu
 						Empresa
 					</h3>
@@ -124,6 +171,30 @@ export default function Servicios() {
 					</a>
 				</div>
 			</section>
+
+			{/* Schema Markup */}
+			<script type="application/ld+json">
+				{JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "Service",
+					name: "Servicios de Visioneers",
+					description:
+						"Desarrollo lingüístico, manejo de conversaciones difíciles, inteligencia emocional y team building en inglés.",
+					provider: {
+						"@type": "Organization",
+						name: "Visioneers",
+						logo: "https://visioneers.com/logo.png",
+						url: "https://visioneers.com",
+					},
+					serviceType: [
+						"Desarrollo Lingüístico",
+						"Manejo de Conversaciones Difíciles",
+						"Inteligencia Emocional",
+						"Team Building",
+					],
+					areaServed: "MX",
+				})}
+			</script>
 		</main>
 	);
 }
