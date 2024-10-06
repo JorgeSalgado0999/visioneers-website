@@ -2,6 +2,7 @@ import Image from "next/image";
 import Head from "next/head";
 import styles from "./mentorias.module.css";
 import {BannerMentorias} from "@/assets";
+import {ContactSection} from "../components/organisms/contactSection";
 
 export default function Mentorias() {
 	return (
@@ -76,7 +77,6 @@ export default function Mentorias() {
 				<h1 style={{display: "none"}}>
 					Acompañamientos Personalizados - Visioneers
 				</h1>
-
 				<section className={styles.banner}>
 					<Image
 						src={BannerMentorias}
@@ -87,7 +87,6 @@ export default function Mentorias() {
 					/>
 					<h2 className={styles.bannerTitle}>Acompañamientos Personalizados</h2>
 				</section>
-
 				<section className={`${styles.mentoriasContent}`}>
 					<p className={styles.mentoriasText}>
 						Entendemos que cada organización es única, y que los retos y
@@ -99,7 +98,6 @@ export default function Mentorias() {
 						y potenciar sus habilidades de manera efectiva y sostenida.
 					</p>
 				</section>
-
 				<section className={`${styles.keyBenefits}`}>
 					<div className={styles.leftSide}>
 						<iframe
@@ -137,18 +135,7 @@ export default function Mentorias() {
 					</div>
 				</section>
 
-				<section className={styles.contact}>
-					<div className={styles.leftSide}>
-						<h3>¿Deseas una cotización a la medida?</h3>
-						<p>
-							Déjanos tus datos y nos pondremos en contacto contigo tan pronto
-							nos sea posible.
-						</p>
-					</div>
-					<div className="rightSide">
-						<h5>Formulario</h5>
-					</div>
-				</section>
+				<ContactSection />
 			</main>
 		</>
 	);

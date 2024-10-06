@@ -2,6 +2,7 @@ import Image from "next/image";
 import Head from "next/head";
 import styles from "./nosotros.module.css";
 import {BannerNosotros} from "@/assets";
+import {ContactSection} from "../components/organisms/contactSection";
 
 export const metadata = {
 	title:
@@ -94,9 +95,7 @@ export default function Nosotros() {
 			</section>
 
 			{/* Contacto */}
-			<section className={styles.contact}>
-				<h3>¿Deseas una cotización a la medida?</h3>
-			</section>
+			<ContactSection />
 
 			{/* Schema Markup */}
 			<script type="application/ld+json">

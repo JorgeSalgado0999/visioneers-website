@@ -1,4 +1,4 @@
 module.exports = {
-	siteUrl: "https://tusitio.com",
+	siteUrl: "https://visioneers.com",
 	generateRobotsTxt: true, // (Opcional) Generar robots.txt automáticamente
 };
