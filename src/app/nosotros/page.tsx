@@ -84,7 +84,7 @@ export default function Nosotros() {
 
 			{/* Información del equipo */}
 			<section className={styles.people}>
-				<h2 className="text-center">Nuestro Equipo</h2>
+				{/* <h2 className="text-center">Nuestro Equipo</h2> */}
 				{people.map((person, index) => (
 					<div className={styles.personCard} key={index}>
 						<Image src={BannerNosotros} alt={`Foto de ${person.name}`} />

@@ -119,13 +119,31 @@
 	font-size: var(--p2);
 	margin-top: 0.5rem;
 }
+.response {
+	color: var(--custom-blue-dark2);
+	font-size: var(--h5);
+	margin-top: 0.5rem;
+}
+.loading {
+	color: var(--black);
+	font-weight: bold;
+	font-size: var(--p2);
+	margin-top: 0.5rem;
+}
 
 /* Botón de enviar */
 .buttonGroup {
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 1rem;
+}
+.buttonGroup .error,
+.buttonGroup .response,
+.buttonGroup .loading {
+	text-align: center;
 }
 .button {
 	width: 90%;
@@ -141,9 +159,18 @@
 	font-weight: bold;
 	color: white;
 }
-
+.button:disabled {
+	background: #ccc;
+	cursor: not-allowed;
+	opacity: 0.7;
+}
 .button:hover {
 	opacity: 0.9;
+}
+/* Desactivar hover cuando el botón está desactivado */
+.button:disabled:hover {
+	opacity: 0.6;
+	cursor: not-allowed;
 }
 
 /* Estilos de accesibilidad */
@@ -163,4 +190,22 @@
 	.contactForm {
 		padding: 1rem;
 	}
+}
+
+/* confirmationMessage */
+.confirmationMessage {
+	width: 100%;
+	height: auto;
+	padding: 3rem 5rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.confirmationMessage p {
+	color: var(--black);
+	font-size: var(--p);
+	font-family: var(--font-gotham-medium), sans-serif;
+	text-align: center;
 }

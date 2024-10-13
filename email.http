@@ -1,0 +1,11 @@
+POST https://6zd2gu40qg.execute-api.us-east-1.amazonaws.com/send-form
+Content-Type: application/json
+
+{
+  "nombre": "Juanito Perez",
+  "correo": "juanito@example.com",
+  "telefono": "1234567890",
+  "empresa": "Mi Empresa",
+  "estado": "CDMX",
+  "mensaje": "Estoy interesado en una cotización."
+}
