@@ -56,9 +56,9 @@ export const ContactSection = () => {
 		return emailRegex.test(email);
 	};
 
-	function esperar(ms: number) {
-		return new Promise((resolve) => setTimeout(resolve, ms));
-	}
+	// function esperar(ms: number) {
+	// 	return new Promise((resolve) => setTimeout(resolve, ms));
+	// }
 
 	// Estado para manejar la respuesta del servidor
 	const [response, setResponse] = useState<string>("");
@@ -139,6 +139,7 @@ export const ContactSection = () => {
 					throw new Error("Error en el envío de los datos.");
 				}
 			} catch (error) {
+				// eslint-disable-next-line @typescript-eslint/no-unused-vars
 				// console.error("Error al enviar los datos:", error);
 				setResponseError(
 					"Hubo un problema al enviar los datos. Intenta de nuevo mas tarde."

@@ -1,6 +1,9 @@
+# *
 User-agent: *
-Disallow: /admin/
-Disallow: /api/
 Allow: /
 
-Sitemap: https://visioneers.com/sitemap.xml
+# Host
+Host: https://visioneers.com.mx
+
+# Sitemaps
+Sitemap: https://visioneers.com.mx/sitemap.xml
