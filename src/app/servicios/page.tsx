@@ -46,9 +46,9 @@ export default function Servicios() {
 				/>
 				<meta
 					property="og:image"
-					content="https://visioneers.com/images/banner-servicios.png"
+					content="https://.mx/images/banner-servicios.png"
 				/>
-				<meta property="og:url" content="https://visioneers.com/servicios" />
+				<meta property="og:url" content="https://visioneers.com.mx/servicios" />
 				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
 
@@ -183,8 +183,8 @@ export default function Servicios() {
 					provider: {
 						"@type": "Organization",
 						name: "Visioneers",
-						logo: "https://visioneers.com/logo.png",
-						url: "https://visioneers.com",
+						logo: "https://visioneers.com.mx/logo.png",
+						url: "https://visioneers.com.mx",
 					},
 					serviceType: [
 						"Desarrollo Lingüístico",

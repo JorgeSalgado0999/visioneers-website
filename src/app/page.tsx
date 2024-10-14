@@ -51,7 +51,7 @@ export default function Home() {
 				/>
 				<meta property="og:image" content="/assets/img/HomeBanner1.png" />
 				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://www.visioneers.com" />
+				<meta property="og:url" content="https://www.visioneers.com.mx" />
 				<meta name="robots" content="index, follow" />
 				<script
 					type="application/ld+json"
@@ -60,7 +60,7 @@ export default function Home() {
 							"@context": "https://schema.org",
 							"@type": "Organization",
 							name: "Visioneers",
-							url: "https://www.visioneers.com",
+							url: "https://www.visioneers.com.mx",
 							logo: "/assets/img/logo.png",
 							sameAs: [
 								"https://www.facebook.com/visioneers",

@@ -18,7 +18,7 @@ export default function Mentorias() {
 					content="acompañamientos personalizados, inglés, habilidades, comunicación, desarrollo, vision, inglés para empresas"
 				/>
 				<meta name="robots" content="index, follow" />
-				<link rel="canonical" href="https://www.visioneers.com/mentorias" />
+				<link rel="canonical" href="https://www.visioneers.com.mx/mentorias" />
 
 				{/* Open Graph Meta Tags */}
 				<meta
@@ -31,11 +31,11 @@ export default function Mentorias() {
 				/>
 				<meta
 					property="og:image"
-					content="https://www.visioneers.com/assets/img/BannerMentorias.jpg"
+					content="https://www.visioneers.com.mx/assets/img/BannerMentorias.png"
 				/>
 				<meta
 					property="og:url"
-					content="https://www.visioneers.com/mentorias"
+					content="https://www.visioneers.com.mx/mentorias"
 				/>
 				<meta property="og:type" content="website" />
 
@@ -51,7 +51,7 @@ export default function Mentorias() {
 				/>
 				<meta
 					name="twitter:image"
-					content="https://www.visioneers.com/assets/img/BannerMentorias.jpg"
+					content="https://www.visioneers.com.mx/assets/img/BannerMentorias.png"
 				/>
 
 				{/* Markup Schema */}
@@ -65,9 +65,9 @@ export default function Mentorias() {
 						provider: {
 							"@type": "Organization",
 							name: "Visioneers",
-							url: "https://www.visioneers.com",
+							url: "https://www.visioneers.com.mx",
 						},
-						url: "https://www.visioneers.com/mentorias",
+						url: "https://www.visioneers.com.mx/mentorias",
 					})}
 				</script>
 			</Head>

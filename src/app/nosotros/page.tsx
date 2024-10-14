@@ -59,9 +59,9 @@ export default function Nosotros() {
 				/>
 				<meta
 					property="og:image"
-					content="https://visioneers.com/images/banner-nosotros.png"
+					content="https://visioneers.com.mx/images/banner-nosotros.png"
 				/>
-				<meta property="og:url" content="https://visioneers.com/nosotros" />
+				<meta property="og:url" content="https://visioneers.com.mx/nosotros" />
 				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
 
@@ -103,10 +103,10 @@ export default function Nosotros() {
 					"@context": "https://schema.org",
 					"@type": "Organization",
 					name: "Visioneers",
-					url: "https://visioneers.com",
+					url: "https://visioneers.com.mx",
 					description:
 						"Conoce al equipo de Visioneers, expertos en acompañamiento personal y profesional.",
-					logo: "https://visioneers.com/logo.png",
+					logo: "https://visioneers.com.mx/logo.png",
 					contactPoint: [
 						{
 							"@type": "ContactPoint",
@@ -120,7 +120,7 @@ export default function Nosotros() {
 						"@type": "Person",
 						name: person.name,
 						description: person.description,
-						image: `https://visioneers.com/images/${person.image}`,
+						image: `https://visioneers.com.mx/images/${person.image}`,
 					})),
 				})}
 			</script>

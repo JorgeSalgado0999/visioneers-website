@@ -26,10 +26,13 @@ export default function Contacto() {
 					content="Contacta a Visioneers para consultas sobre nuestros servicios de inglés empresarial. Ofrecemos clases de inglés presenciales y online."
 				/>
 				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://www.visioneers.com/contacto" />
+				<meta
+					property="og:url"
+					content="https://www.visioneers.com.mx/contacto"
+				/>
 				<meta
 					property="og:image"
-					content="https://www.visioneers.com/assets/banner-contacto.jpg"
+					content="https://www.visioneers.com.mx/img/BannerContacto.png"
 				/>
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:title" content="Contacto | Visioneers" />
@@ -39,7 +42,7 @@ export default function Contacto() {
 				/>
 				<meta
 					name="twitter:image"
-					content="https://www.visioneers.com/assets/banner-contacto.jpg"
+					content="https://www.visioneers.com.mx/assets/BannerContacto.png"
 				/>
 			</Head>
 
@@ -115,7 +118,7 @@ export default function Contacto() {
 							"@context": "https://schema.org",
 							"@type": "ContactPage",
 							name: "Contacto Visioneers",
-							url: "https://www.visioneers.com/contacto",
+							url: "https://www.visioneers.com.mx/contacto",
 							contactPoint: [
 								{
 									"@type": "ContactPoint",
