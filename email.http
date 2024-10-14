@@ -1,4 +1,4 @@
-POST https://6zd2gu40qg.execute-api.us-east-1.amazonaws.com/send-form
+POST https://9yfryfy9v6.execute-api.us-east-2.amazonaws.com/send-form
 Content-Type: application/json
 
 {

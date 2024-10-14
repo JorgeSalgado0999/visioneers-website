@@ -15,7 +15,7 @@ interface ValidationErrors {
 
 // Definimos la URL de la API (reemplaza con tu URL)
 const API_URL =
-	"https://6zd2gu40qg.execute-api.us-east-1.amazonaws.com/send-form";
+	"https://9yfryfy9v6.execute-api.us-east-2.amazonaws.com/send-form";
 
 // Constantes para el nombre de la clave en localStorage y el tiempo en milisegundos
 const FORM_SUBMISSION_KEY = "formSubmissionTimestamp";
