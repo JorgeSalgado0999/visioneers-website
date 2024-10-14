@@ -138,6 +138,7 @@ export const ContactSection = () => {
 					);
 					throw new Error("Error en el envío de los datos.");
 				}
+				// eslint-disable-next-line @typescript-eslint/no-unused-vars
 			} catch (error) {
 				// eslint-disable-next-line @typescript-eslint/no-unused-vars
 				// console.error("Error al enviar los datos:", error);
