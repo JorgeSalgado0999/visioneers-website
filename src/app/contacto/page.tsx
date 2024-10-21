@@ -97,7 +97,7 @@ export default function Contacto() {
 									<h5>Whatsapp</h5>
 									<p>1 33 2268 8620</p>
 									<a
-										href="https://wa.me/5213311855150"
+										href="https://wa.me/13322688620"
 										target="_blank"
 										className={styles.whatsappButton}
 										rel="noopener noreferrer"

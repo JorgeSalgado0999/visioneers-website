@@ -210,7 +210,7 @@ export default function Home() {
 
 					<div className={styles.whatsappButtonContainer}>
 						<a
-							href="https://wa.me/5213311855150"
+							href="https://wa.me/13322688620"
 							target="_blank"
 							className={styles.whatsappButton}
 						>
